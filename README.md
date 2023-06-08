@@ -20,7 +20,7 @@ The program should also be capable of generating an HTML file to display the ext
 ### Dependencies
 
 - Go: Visit [https://go.dev](https://go.dev) for installation instructions.
-- [go-exif](github.com/rwcarlsen/goexif/exif): A Go library for extracting EXIF metadata from images.
+- [go-exif](https://github.com/rwcarlsen/goexif): A Go library for extracting EXIF metadata from images.
 
 ---
 
