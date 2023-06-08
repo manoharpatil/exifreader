@@ -37,12 +37,12 @@ The program should also be capable of generating an HTML file to display the ext
 4. Run the program:
    ./exif-reader --directory /path/to/images
 
-Replace `/path/to/images` with the actual directory path containing the images you want to process.
+   Replace `/path/to/images` with the actual directory path containing the images you want to process.
 
 5. The program will generate two output files:
 
-- `output.csv`: CSV file containing the image file paths, GPS latitude, and GPS longitude.
-- `output.html`: HTML file displaying the extracted data in a table format.
+   - `output.csv`: CSV file containing the image file paths, GPS latitude, and GPS longitude.
+   - `output.html`: HTML file displaying the extracted data in a table format.
 
 ---
 
