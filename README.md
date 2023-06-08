@@ -78,15 +78,23 @@ The `main.go` file contains the code for the EXIF Reader utility. Here's an over
 
 The time complexity of the program can be analyzed as follows:
 
-- Directory traversal: The time complexity of traversing the directory and its subdirectories using `filepath.Walk` is proportional to the number of files and directories. Let's denote the total number of files and directories as `n`. In the worst case, if there are `n` files and directories, the time complexity would be O(n).
+- Directory traversal:  
+  The time complexity of traversing the directory and its subdirectories using `filepath.Walk` is proportional to the number of files and directories. Let's denote the total number of files and directories as `n`. In the worst case, if there are `n` files and directories, the time complexity would be O(n).
 
-- Reading EXIF data: The time complexity of reading EXIF data from an image file depends on the size of the file and the complexity of the EXIF decoding algorithm. Let's denote the size of the largest image file as `m`. The time complexity of reading EXIF data can be approximated as O(m).
 
-- Extracting GPS data: The time complexity of extracting GPS data from the EXIF data is considered constant or O(1) since it involves accessing specific fields in the EXIF data.
+- Reading EXIF data:   
+  The time complexity of reading EXIF data from an image file depends on the size of the file and the complexity of the EXIF decoding algorithm. Let's denote the size of the largest image file as `m`. The time complexity of reading EXIF data can be approximated as O(m).
 
-- Writing to CSV and HTML files: The time complexity of writing a single row of data to the CSV file and the HTML file is considered constant or O(1). The total time complexity depends on the number of images processed, which is proportional to the number of files in the directory tree (`n`).
 
-Considering the above factors, the overall time complexity can be approximated as O(n + m) in the worst case scenario.
+- Extracting GPS data:  
+  The time complexity of extracting GPS data from the EXIF data is considered constant or O(1) since it involves accessing specific fields in the EXIF data.
+
+
+- Writing to CSV and HTML files:   
+  The time complexity of writing a single row of data to the CSV file and the HTML file is considered constant or O(1). The total time complexity depends on the number of images processed, which is proportional to the number of files in the directory tree (`n`).
+
+
+> Considering the above factors, the overall time complexity can be approximated as O(n + m) in the worst case scenario.
 
 ---
 
@@ -94,12 +102,18 @@ Considering the above factors, the overall time complexity can be approximated a
 
 The space complexity of the program can be analyzed as follows:
 
-- Directory tree: The space complexity for storing the directory tree depends on the depth and branching factor of the tree. In the worst case, if there are `n` files and directories, the space complexity for storing the directory tree can be approximated as O(n).
+- Directory tree:    
+  The space complexity for storing the directory tree depends on the depth and branching factor of the tree. In the worst case, if there are `n` files and directories, the space complexity for storing the directory tree can be approximated as O(n).
 
-- EXIF data: The space complexity for storing the EXIF data of the largest image file depends on the size of the file. Let's denote the size of the largest image file as `m`. The space complexity for storing the EXIF data can be approximated as O(m).
 
-- Additional variables: The space complexity for additional variables used in the code is considered constant or O(1). These variables do not depend on the input size.
+- EXIF data:    
+  The space complexity for storing the EXIF data of the largest image file depends on the size of the file. Let's denote the size of the largest image file as `m`. The space complexity for storing the EXIF data can be approximated as O(m).
 
-Considering the above factors, the overall space complexity can be approximated as O(n + m) in the worst case scenario.
+
+- Additional variables:   
+  The space complexity for additional variables used in the code is considered constant or O(1). These variables do not depend on the input size.
+
+
+> Considering the above factors, the overall space complexity can be approximated as O(n + m) in the worst case scenario.
 
 ---
