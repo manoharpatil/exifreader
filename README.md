@@ -1,3 +1,4 @@
+---
 ### EXIF Reader
 
 This command-line utility written in Go reads the EXIF data from images in a specified directory and generates a CSV file and an HTML file with the extracted attributes.
@@ -19,7 +20,7 @@ The program should also be capable of generating an HTML file to display the ext
 ### Dependencies
 
 - Go: Visit [https://go.dev](https://go.dev) for installation instructions.
-- [go-exif](https://github.com/dsoprea/go-exif): A Go library for extracting EXIF metadata from images.
+- [go-exif](github.com/rwcarlsen/goexif/exif): A Go library for extracting EXIF metadata from images.
 
 ---
 
